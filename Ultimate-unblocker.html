@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Classroom</title>
+    <title>Classes</title>
+    <link rel="icon" type="image/png" href="//ssl.gstatic.com/classroom/favicon.png">
     
     <style>
         html {
@@ -42,7 +43,6 @@
             border-style: solid;
             border-width: 1px;
             opacity: .5;
-            
             transition: .3s;
         } 
 
@@ -50,58 +50,10 @@
             opacity: 1;
         }
         
-        #box {
-            border: 1px solid;
-            margin-top: 15px;
-            margin-left: 15px;
-            display:inline-block;
-            font-family: Arial, Helvetica, sans-serif;
-            vertical-align: top;
-        }
-        #contents {
-            font-weight: 100;
-            text-align: center;
-            padding-top: 0px;
-            margin-top: 7px;
-            font-weight: 100 !important;
-            font-size: 20px;
-            
-        }
-        ul {
-            margin-top: 1px;
-            list-style-type: none;
-            margin: 0; padding: 0;
-            padding-bottom: 10px;
-        } 
-        li {
-            margin: 0; padding: 0;
-            text-align: left;
-        }
-        .working {
-            color:green;
-            font-size: 15px;
-        } 
-        .category {
-            margin-bottom: 3px;
-            font-size: 15px;
-        }
-        .category {
-           font-size: 16px;
-           padding-left: 5px;
-        }
-        .bookmarklet {
-            margin-left: 15px;
-            font-size: 15px;
-        }
-        .paragraph {
-            display: inline-block;
-        }
-        .text {
-            display: inline-block;
-            margin-left: 40px;
-            width: 1000px;
-            overflow-wrap:break-word;
-        }
+
+
+
+ 
         
         
     </style>
@@ -109,15 +61,18 @@
 </head>
 
 <header style="cursor: default">
-    <section id="menu">
-        <span>
-            <button onclick="bing()">Bing-iframe</button>
-            <button onclick="surfFreely()">Proxy (recommended)</button>
+        
+    
+        <span id="menu">
+            
+            
+            <button onclick="bing()">Bing Iframe</button>
+            <button onclick="surfFreely()">Surf Freely</button>
             <button onclick="bookmarklets()">Bookmarklets</button>
             <button onclick="home()">Home</button>
             
         </span>
-    </section>
+    
 
     <script>
         function surfFreely() {
@@ -147,19 +102,3 @@
     </script>
     
 </header>
-
-
-
-
-
-
-<body>
-
-    <section id='c'>
-
-    </section>
-</body>
-
-
-</html>
-
