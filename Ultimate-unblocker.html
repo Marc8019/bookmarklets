@@ -31,8 +31,9 @@
                 document.getElementById("y").style.position = "absolute"
                 document.getElementById("y").style.zIndex = "1"
             }
-            
-        }  
+        }
+
+      
         </script>
     <style>
         html {
@@ -44,6 +45,7 @@
             margin:0;
             overflow: hidden;
             font-family: Arial, Helvetica, sans-serif;
+            
         }
         #c {
             height:100%;
@@ -84,7 +86,7 @@
             
         }
         #header {
-            cursor:pointer;
+            cursor:pointer !important;
             display:inline-block;
         }
 
@@ -93,35 +95,19 @@
         
         
     </style>
-
 </head>
 <button id="y" onclick=fullscreen()>↓</button>
 <div id="header">
-        
-            
-        
-    
-        <span>
-            
-            
+        <span> 
             <button onclick="bing()">Bing Iframe</button>
             <button onclick="surfFreely()">Surf Freely</button>
             <button onclick="bookmarklets()">Bookmarklets</button>
             <button onclick="home()">Home</button>
-            
         </span>
-    
-
-
-</div>
-
+    </div>
 <body>
-
     <section id='c'>
-
     </section>
 </body>
-
-
 </html>
 

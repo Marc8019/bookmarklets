@@ -3,125 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Classes</title>
-    <link rel="icon" type="image/png" href="//ssl.gstatic.com/classroom/favicon.png">
-    
+    <title>Document</title>
     <script>
-        function surfFreely() {
-            document.getElementById("c").innerHTML = "<iframe id=\"iframe\" src=\"https://phoenix-le.cf\"style=\" width=\"100%\" height=\"100%\";>"
+        function a(){
+            alert('hi')
         }
-        function bing() {
-            document.getElementById("c").innerHTML = "<iframe onload=\"frameload()\" src=\"https://www.bing.com\" ;>"
-        } 
-        function re() {
-            document.getElementById("c").innerHTML = "<div id=\"box\"><h2 id=\"contents\">Contents</h2><ul><li class=\"category\">Misc</li><li><span class=\"heading\">Inspect Element</li><span><span class=\"working\" class=\"bookmarklet\"> Working<span></ul></div>"
+        function b(){
+            window.open("https://www.google.com")
         }
-        function home() {
-            document.getElementById("c").innerHTML = "<h1>Welcome to the Stealth Popup unblocker, made by marc#8019. The proxy feature should work on all platforms and security vendors (goguardian, iboss, etc) and it works with games. The bing-iframe embeds bing into the site."
-        }
-        function fullscreen() {
-            var x = document.getElementById("header");
-            if (x.style.display === "none") {
-                x.style.display = "inline-block";
-                document.getElementById("y").style.position = "static"
-                
-            } else {
-                x.style.display = "none";
-                document.getElementById("y").style.position = "absolute"
-                document.getElementById("y").style.zIndex = "1"
-            }
-            
-        }  
-        </script>
-    <style>
-        html {
-            height: 100%;
-        }
-        body {
-            height:100%;
-            width:100%;
-            margin:0;
-            overflow: hidden;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        #c {
-            height:100%;
-            width:100%;
-            margin:0;
-            overflow: hidden;
-        }
-        iframe {
-            position: relative;
-            border: none;
-            margin-top: 10px;
-            width: 100%;
-            height: 100%;
-            background-color: #000000;
-            margin: 0;
-    
-           
-        } button {
-            outline:none;
-            width: auto;
-            height: auto;
-            border-color: #222;
-            color: #222;
-            border-style: solid;
-            border-width: 1px;
-            opacity: .5;
-            transition: .3s;
-        } 
-
-        button:hover {
-            opacity: 1;
-        }
-        #y {
-            display: inline-block;
-            padding-left: 1px;
-            padding-right: 1px;
-            margin-left: 4px;
-            
-        }
-        #header {
-            cursor:pointer;
-            display:inline-block;
-        }
-
-
- 
-        
-        
-    </style>
-
+    </script>
 </head>
-<button id="y" onclick=fullscreen()>↓</button>
-<div id="header">
-        
-            
-        
-    
-        <span>
-            
-            
-            <button onclick="bing()">Bing Iframe</button>
-            <button onclick="surfFreely()">Surf Freely</button>
-            <button onclick="bookmarklets()">Bookmarklets</button>
-            <button onclick="home()">Home</button>
-            
-        </span>
-    
-
-
-</div>
-
 <body>
-
-    <section id='c'>
-
-    </section>
+    <button onclick="b()">test</button>
 </body>
-
-
 </html>
-
