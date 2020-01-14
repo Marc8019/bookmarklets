@@ -17,7 +17,7 @@
             overflow: hidden;
             font-family: Arial, Helvetica, sans-serif;
         }
-        .c {
+        #c {
             height:100%;
             width:100%;
             margin:0;
@@ -109,27 +109,38 @@
 </head>
 
 <header style="cursor: default">
-    <section>
-        <button onclick="bing()">Bing-iframe</button>
-        <button onclick="surfFreely()">Proxy (recommended)</button>
-        <button onclick="bookmarklets()">Bookmarklets</button>
-        <button onclick="home()">Home</button>
+    <section id="menu">
+        <span>
+            <button onclick="bing()">Bing-iframe</button>
+            <button onclick="surfFreely()">Proxy (recommended)</button>
+            <button onclick="bookmarklets()">Bookmarklets</button>
+            <button onclick="home()">Home</button>
+            
+        </span>
     </section>
 
     <script>
         function surfFreely() {
-            document.getElementById("42O").innerHTML = "<iframe id=\"iframe\" src=\"https://phoenix-le.cf\"style=\" width=\"100%\" height=\"100%\";>"
+            document.getElementById("c").innerHTML = "<iframe id=\"iframe\" src=\"https://phoenix-le.cf\"style=\" width=\"100%\" height=\"100%\";>"
         }
         function bing() {
-            document.getElementById("42O").innerHTML = "<iframe onload=\"frameload()\" src=\"https://www.bing.com\" ;>"
+            document.getElementById("c").innerHTML = "<iframe onload=\"frameload()\" src=\"https://www.bing.com\" ;>"
         } 
         function re() {
-            document.getElementById("42O").innerHTML = "<div id=\"box\"><h2 id=\"contents\">Contents</h2><ul><li class=\"category\">Misc</li><li><span class=\"heading\">Inspect Element</li><span><span class=\"working\" class=\"bookmarklet\"> Working<span></ul></div>"
+            document.getElementById("c").innerHTML = "<div id=\"box\"><h2 id=\"contents\">Contents</h2><ul><li class=\"category\">Misc</li><li><span class=\"heading\">Inspect Element</li><span><span class=\"working\" class=\"bookmarklet\"> Working<span></ul></div>"
         }
         function home() {
-            document.getElementById("42O").innerHTML = "<h1>Welcome to the Stealth Popup unblocker, made by marc#8019. The proxy feature should work on all platforms and security vendors (goguardian, iboss, etc) and it works with games. The bing-iframe embeds bing into the site."
+            document.getElementById("c").innerHTML = "<h1>Welcome to the Stealth Popup unblocker, made by marc#8019. The proxy feature should work on all platforms and security vendors (goguardian, iboss, etc) and it works with games. The bing-iframe embeds bing into the site."
         }
-        
+        function fullscreen() {
+            var x = document.getElementById("menu");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            
+        } 
         
         
  
@@ -137,31 +148,7 @@
     
 </header>
 
-<section style="display: inline-block;">
-    <div id="box">
-        <h2 id="contents">Contents</h2>
-        <ul>
-            <li class="category">Miscellaneous</li>
-            <li><a><span class="bookmarklet">Inspect Element<span><span class="working"> Working<span></a></li>
-            <li><a><span class="bookmarklet">Disguise Tab</span><span class="working"> Working</span></a></li>
-            <li><a><span class="bookmarklet">Asteroid Game</span><span class="working"> Working</span></a></li>
-        </ul>
-    </div>
 
-    <div class="text">
-        <h1 class="categoryHeading">Miscellaneous</h1>
-
-        <section>
-            <h2 class="subCategoryHeading">Inspect Element</h2>
-            <p>Use this bookmarklet as an inspect element replacement. It will allows you to click on all text and edit. Execute the bookmarklet again to disable editing and lock in the changes you made.</p>
-            <pre>
-                <code>
-
-                </code>
-            </pre>
-        </section>
-    </div>
-</section>
 
 
 
