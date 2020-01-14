@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Classroom</title>
+    <title>Classes</title>
+    <link rel="icon" type="image/png" href="//ssl.gstatic.com/classroom/favicon.png">
     
     <style>
         html {
@@ -17,7 +18,7 @@
             overflow: hidden;
             font-family: Arial, Helvetica, sans-serif;
         }
-        .c {
+        #c {
             height:100%;
             width:100%;
             margin:0;
@@ -42,7 +43,6 @@
             border-style: solid;
             border-width: 1px;
             opacity: .5;
-            
             transition: .3s;
         } 
 
@@ -50,58 +50,10 @@
             opacity: 1;
         }
         
-        #box {
-            border: 1px solid;
-            margin-top: 15px;
-            margin-left: 15px;
-            display:inline-block;
-            font-family: Arial, Helvetica, sans-serif;
-            vertical-align: top;
-        }
-        #contents {
-            font-weight: 100;
-            text-align: center;
-            padding-top: 0px;
-            margin-top: 7px;
-            font-weight: 100 !important;
-            font-size: 20px;
-            
-        }
-        ul {
-            margin-top: 1px;
-            list-style-type: none;
-            margin: 0; padding: 0;
-            padding-bottom: 10px;
-        } 
-        li {
-            margin: 0; padding: 0;
-            text-align: left;
-        }
-        .working {
-            color:green;
-            font-size: 15px;
-        } 
-        .category {
-            margin-bottom: 3px;
-            font-size: 15px;
-        }
-        .category {
-           font-size: 16px;
-           padding-left: 5px;
-        }
-        .bookmarklet {
-            margin-left: 15px;
-            font-size: 15px;
-        }
-        .paragraph {
-            display: inline-block;
-        }
-        .text {
-            display: inline-block;
-            margin-left: 40px;
-            width: 1000px;
-            overflow-wrap:break-word;
-        }
+
+
+
+ 
         
         
     </style>
@@ -109,27 +61,41 @@
 </head>
 
 <header style="cursor: default">
-    <section>
-        <button onclick="bing()">Bing-iframe</button>
-        <button onclick="surfFreely()">Proxy (recommended)</button>
-        <button onclick="bookmarklets()">Bookmarklets</button>
-        <button onclick="home()">Home</button>
-    </section>
+        
+    
+        <span id="menu">
+            
+            
+            <button onclick="bing()">Bing Iframe</button>
+            <button onclick="surfFreely()">Surf Freely</button>
+            <button onclick="bookmarklets()">Bookmarklets</button>
+            <button onclick="home()">Home</button>
+            
+        </span>
+    
 
     <script>
         function surfFreely() {
-            document.getElementById("42O").innerHTML = "<iframe id=\"iframe\" src=\"https://phoenix-le.cf\"style=\" width=\"100%\" height=\"100%\";>"
+            document.getElementById("c").innerHTML = "<iframe id=\"iframe\" src=\"https://phoenix-le.cf\"style=\" width=\"100%\" height=\"100%\";>"
         }
         function bing() {
-            document.getElementById("42O").innerHTML = "<iframe onload=\"frameload()\" src=\"https://www.bing.com\" ;>"
+            document.getElementById("c").innerHTML = "<iframe onload=\"frameload()\" src=\"https://www.bing.com\" ;>"
         } 
         function re() {
-            document.getElementById("42O").innerHTML = "<div id=\"box\"><h2 id=\"contents\">Contents</h2><ul><li class=\"category\">Misc</li><li><span class=\"heading\">Inspect Element</li><span><span class=\"working\" class=\"bookmarklet\"> Working<span></ul></div>"
+            document.getElementById("c").innerHTML = "<div id=\"box\"><h2 id=\"contents\">Contents</h2><ul><li class=\"category\">Misc</li><li><span class=\"heading\">Inspect Element</li><span><span class=\"working\" class=\"bookmarklet\"> Working<span></ul></div>"
         }
         function home() {
-            document.getElementById("42O").innerHTML = "<h1>Welcome to the Stealth Popup unblocker, made by marc#8019. The proxy feature should work on all platforms and security vendors (goguardian, iboss, etc) and it works with games. The bing-iframe embeds bing into the site."
+            document.getElementById("c").innerHTML = "<h1>Welcome to the Stealth Popup unblocker, made by marc#8019. The proxy feature should work on all platforms and security vendors (goguardian, iboss, etc) and it works with games. The bing-iframe embeds bing into the site."
         }
-        
+        function fullscreen() {
+            var x = document.getElementById("menu");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+            
+        } 
         
         
  
@@ -137,31 +103,7 @@
     
 </header>
 
-<section style="display: inline-block;">
-    <div id="box">
-        <h2 id="contents">Contents</h2>
-        <ul>
-            <li class="category">Miscellaneous</li>
-            <li><a><span class="bookmarklet">Inspect Element<span><span class="working"> Working<span></a></li>
-            <li><a><span class="bookmarklet">Disguise Tab</span><span class="working"> Working</span></a></li>
-            <li><a><span class="bookmarklet">Asteroid Game</span><span class="working"> Working</span></a></li>
-        </ul>
-    </div>
 
-    <div class="text">
-        <h1 class="categoryHeading">Miscellaneous</h1>
-
-        <section>
-            <h2 class="subCategoryHeading">Inspect Element</h2>
-            <p>Use this bookmarklet as an inspect element replacement. It will allows you to click on all text and edit. Execute the bookmarklet again to disable editing and lock in the changes you made.</p>
-            <pre>
-                <code>
-
-                </code>
-            </pre>
-        </section>
-    </div>
-</section>
 
 
 
@@ -175,5 +117,3 @@
 
 
 </html>
-
-
