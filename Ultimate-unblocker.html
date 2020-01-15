@@ -38,14 +38,15 @@
     <style>
         html {
             height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
             height:100%;
             width:100%;
             margin:0;
             overflow: hidden;
-            font-family: Arial, Helvetica, sans-serif;
             
+            background-color: #222831;
         }
         #c {
             height:100%;
@@ -67,12 +68,15 @@
             outline:none;
             width: auto;
             height: auto;
-            border-color: #222;
             color: #222;
-            border-style: solid;
-            border-width: 1px;
             opacity: .5;
             transition: .3s;
+            display: inline-block;
+
+            border: none;
+            background-color: #00adb5;
+            font-size: 15px;
+            padding: 5px 1px 5px 4px;
         } 
 
         button:hover {
@@ -80,31 +84,43 @@
         }
         #y {
             display: inline-block;
-            padding-left: 1px;
-            padding-right: 1px;
-            margin-left: 4px;
+            padding: 5px 1px 5px 1px;
+           
             
         }
         #header {
             cursor:pointer !important;
             display:inline-block;
+            margin: 0px;
+            padding: 0px;
         }
-
-
+        form {
+            display:none;
+            width: auto;
+            
+            color: #222;
+            
+        } input {
+            border-style: 1px solid;
+            width: 95px;
+            
+        }
  
         
         
     </style>
 </head>
-<button id="y" onclick=fullscreen()>↓</button>
-<div id="header">
-        <span> 
-            <button onclick="bing()">Bing Iframe</button>
-            <button onclick="surfFreely()">Surf Freely</button>
-            <button onclick="bookmarklets()">Bookmarklets</button>
-            <button onclick="home()">Home</button>
-        </span>
-    </div>
+<button id="y" onclick=fullscreen()>↓</button><!--
+--><div id="header"><!--
+            --><button onclick="bing()">Bing Iframe</button><button onclick="surfFreely()">Surf Freely</button><button onclick="bookmarklets()">Bookmarklets</button><button onclick="home()">Home</button>
+                <form onsubmit="goToURL();">
+                    <input type="url" >
+                </form>
+              
+            
+            
+       
+</div>
 <body>
     <section id='c'>
     </section>
