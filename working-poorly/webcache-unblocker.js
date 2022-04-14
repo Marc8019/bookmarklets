@@ -1,2 +1,0 @@
-//Uses cached websites to return a version of the site you wish to visit. Most sites are not cached, and won't work. Games don't work.
-javascript:(function(){var val = prompt("Enter the webpage you want to unblock. This will not work for games. Many sites will not be cached, and will not work. Made by Marc#8019.", "");location = "http://webcache.googleusercontent.com/search?q=cache:" + escape(val)})()
